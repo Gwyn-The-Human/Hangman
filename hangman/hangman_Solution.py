@@ -80,7 +80,14 @@ class Hangman:
         '''
 
         print ("Guess a new letter!")
-
+        letter = input ().upper() #will the guess be case sensitive? keep .upper in mind!! 
+        if len(letter) != 1:
+            print ("Please, enter just one character.")
+            return Hangman.ask_letter()
+        if letter in list_letters:
+            print (f"{letter} has already been tried.")
+            return Hangman.ask_letter()
+        return Hangman.check_letter (letter)
 
 
         # TODO 1: Ask the user for a letter iteratively until the user enters a valid letter
@@ -93,7 +100,7 @@ def play_game(word_list):
     # As an aid, part of the code is already provided:
     game = Hangman(word_list, num_lives=5)
     # TODO 1: To test this task, you can call the ask_letter method
-    Hangman.ask_letter()
+    game.ask_letter()
 
 
 

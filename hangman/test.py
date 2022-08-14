@@ -1,11 +1,16 @@
 
-from re import X
+
 
 
 list_letters = ["A","B"]
 
 
 class Hongman:
+
+
+    def __init__(self, word_list, num_lives=5):
+        print ("init")
+        
 
     def check_letter ():
         print ("Guess a new letter!")
@@ -18,6 +23,6 @@ class Hongman:
             return Hongman.check_letter()
         return letter
 
-x = Hongman.check_letter()
 
-print (x + " is my guess!")
+
+
