@@ -83,11 +83,11 @@ class Hangman:
         letter = input ().upper() #will the guess be case sensitive? keep .upper in mind!! 
         if len(letter) != 1:
             print ("Please, enter just one character.")
-            return Hangman.ask_letter()
-        if letter in list_letters:
+            return self.ask_letter()
+        #if letter in self.list_letters:
             print (f"{letter} has already been tried.")
-            return Hangman.ask_letter()
-        return Hangman.check_letter (letter)
+            return self.ask_letter()
+        return self.check_letter (letter)
 
 
         # TODO 1: Ask the user for a letter iteratively until the user enters a valid letter
