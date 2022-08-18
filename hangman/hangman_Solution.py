@@ -4,10 +4,6 @@ The prints have to contain the same text as indicated, don't add any more prints
 or you will get 0 for this assignment.
 '''
 import random
-from re import X
-
-
-
 
 
 class Hangman:
