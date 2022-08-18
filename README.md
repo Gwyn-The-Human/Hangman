@@ -8,7 +8,7 @@ in check_letter, I chose to iterate through each letter of the answer, searching
 This method doesnt stop when it reaches one instance of a correct letter, and iterates all the way through to the end of the word. 
 Also keeping track of the index means that I could easily indicate which blank space "_" to fill in for word_guessed, because an index of the answer corrosponds to an index of word_guessed:
 
-
+```
  if letter in self.word:
             index_counter = 0
             for word_letter in self.word:
@@ -20,7 +20,7 @@ Also keeping track of the index means that I could easily indicate which blank s
                     index_counter +=1
                     pass
 
-
+```
 
 
 The game could be customised by adding more words to word_list, but if you wanted to change the number of lives to anything more than 6 you'd have to add more graphics. 
